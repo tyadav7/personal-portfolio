@@ -1,0 +1,46 @@
+:host {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    div.title-container {
+        display: flex;
+        h3.mat-headline-6{
+            display: flex;
+            margin:0 0 2px;
+            mat-icon{
+                height: 32px;
+                width: 32px;
+            }
+        }
+        h3.value {
+            margin-left: auto;
+        }
+    }
+
+    div.progress-bar-container {
+        height: 5px;
+        border-radius: 0.25rem;
+        background-color: rgb(182, 205, 252);
+        width: 100%;
+
+        span.progress-span {
+            height: 5px;
+            border-radius: 0.25rem;
+            display: block;
+            background-color: rgb(1, 84, 249);
+            animation: 3s ease 0s 1 normal forwards running slideright;
+            width: 90%;
+        }
+    }
+
+    @keyframes slideright {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: var(--target-width);
+        }
+    }
+}

@@ -1,0 +1,67 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row *ngIf="isScreenBig$ | async">
+        <label class="mat-headline-4">&lt;/ty&gt;</label>
+        <div class="header-center-container">
+            <button color="accent" mat-button><mat-icon>account_circle</mat-icon>About</button>
+            <button color="accent" mat-button><mat-icon>engineering</mat-icon>Skills</button>
+            <button color="accent" mat-button><mat-icon>timeline</mat-icon>Experience</button>
+            <button color="accent" mat-button><mat-icon>menu_book</mat-icon>Education</button>
+        </div>
+        <div class="header-right-container">
+            <button mat-icon-button color="accent">
+                <mat-icon svgIcon="twitter">
+                </mat-icon>
+            </button>
+            <button mat-icon-button color="accent">
+                <mat-icon svgIcon="linkedin">
+                </mat-icon>
+            </button>
+            <button mat-icon-button color="accent">
+                <mat-icon svgIcon="github">
+                </mat-icon>
+            </button>
+            <button mat-icon-button color="accent">
+                <mat-icon svgIcon="stackoverflow">
+                </mat-icon>
+            </button>
+        </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row *ngIf="!(isScreenBig$ | async)">
+        <div class="header-left-container">
+            <label class="mat-headline-4">&lt;/ty&gt;</label>
+        </div>
+        <div class="header-right-container">
+            <button mat-icon-button color="accent" (click)="showMenu = !showMenu">
+                <mat-icon>
+                    menu
+                </mat-icon>
+            </button>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+<nav class="mobile-navbar" [ngStyle]="{'height': !(showMenu && !(isScreenBig$ | async)) ? '0px' : '200px'}">
+    <ul>
+        <li><button color="accent" mat-button><mat-icon>account_circle</mat-icon>About</button></li>
+        <li><button color="accent" mat-button><mat-icon>engineering</mat-icon>Skills</button></li>
+        <li><button color="accent" mat-button><mat-icon>timeline</mat-icon>Experience</button></li>
+        <li><button color="accent" mat-button><mat-icon>menu_book</mat-icon>Education</button></li>
+        <li>
+            <button mat-icon-button color="accent">
+                <mat-icon svgIcon="twitter">
+                </mat-icon>
+            </button>
+            <button mat-icon-button color="accent">
+                <mat-icon svgIcon="linkedin">
+                </mat-icon>
+            </button>
+            <button mat-icon-button color="accent">
+                <mat-icon svgIcon="github">
+                </mat-icon>
+            </button>
+            <button mat-icon-button color="accent">
+                <mat-icon svgIcon="stackoverflow">
+                </mat-icon>
+            </button>
+        </li>
+    </ul>
+</nav>

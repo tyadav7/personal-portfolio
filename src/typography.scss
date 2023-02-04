@@ -1,0 +1,5 @@
+@use '@angular/material' as mat;
+
+$my-custom-typography-config: mat.define-typography-config(
+  $font-family: 'Poppins, sans-serif'
+);

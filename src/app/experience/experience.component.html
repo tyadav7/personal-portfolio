@@ -1,0 +1,65 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            <h1>Work Experience</h1>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-vertical-stepper [linear]="false" #stepper animationDuration="2000">
+            <ng-template matStepperIcon="edit">
+            </ng-template>
+            <ng-template matStepperIcon="done">
+            </ng-template>
+            <ng-template matStepperIcon="number" let-index="index">
+            </ng-template>
+            <!-- Stepper steps go here -->
+            <mat-step completed="true">
+                <ng-template matStepLabel>
+                    <label class="mat-headline-6">Software Engineering Team Lead</label><br>
+                    <label class="mat-subtitle-2">
+                        Jan 2022 - Present {{calculateExperience("01 01 2022")}}<br>
+                        {{location}}
+                    </label>
+                </ng-template>
+                
+Design and Development of Products in Marketing & Sales practice, building Enterprise Pricing Strategy and Promotion Optimisation, that transform business operations of large Retail and CPG clients worldwide.
+
+→
+Build modern GraphQL Microservices using Node.JS and Typescript with both SQL & NoSQL Data Stores that transcend high performance, customised, stable and scalable results.
+
+→
+Manage and Build highly optimised and re-usable UI components and fragments using React with Typescript based on Micro-Frontends Architecture.
+
+→
+Design and Build highly complex and scalable Data Processing Pipelines for Batch/Stream Processes using various Data Transformation tools architected using Azure Databricks (Apache Spark) and Azure Stream Analytics, managed and orchestrated by Azure DataFactory.
+            </mat-step>
+            <mat-step completed="true">
+                <ng-template matStepLabel>
+                    <label class="mat-headline-6">Software Engineering Specialist</label><br>
+                    <label class="mat-subtitle-2">
+                        Jan 2021 - Dec 2022 {{calculateExperience("01 01 2021","01 01 2022")}}<br>
+                        {{location}}
+                    </label>
+                </ng-template>
+            </mat-step>
+            <mat-step completed="true">
+                <ng-template matStepLabel>
+                    <label class="mat-headline-6">Software Developer</label><br>
+                    <label class="mat-subtitle-2">
+                        Jun 2017 - Dec 2020 {{calculateExperience("06 01 2017","12 31 2020")}}<br>
+                        {{location}}
+                    </label>
+                </ng-template>
+            </mat-step>
+            <mat-step completed="true">
+                <ng-template matStepLabel>
+                    <label class="mat-headline-6">Software Engineer</label><br>
+                    <label class="mat-subtitle-2">
+                        Oct 2015 - May 2017 {{calculateExperience("10 01 2015","05 31 2017")}}<br>
+                        {{location}}
+                    </label>
+                </ng-template>
+            </mat-step>
+        </mat-vertical-stepper>
+    </mat-card-content>
+</mat-card>

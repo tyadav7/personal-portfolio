@@ -1,0 +1,22 @@
+:host {
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80%;
+
+    mat-card {
+        display: flex;
+
+        mat-card-header {
+            justify-content: center;
+        }
+
+        mat-card-content {
+            div.resume-button-container {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
