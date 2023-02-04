@@ -14,4 +14,4 @@
         </div>
     </div>
 </section>
-<app-chevron></app-chevron>
+<app-chevron *ngIf="(isScreenBig$ | async)"></app-chevron>
