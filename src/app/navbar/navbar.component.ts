@@ -8,12 +8,5 @@ import { ResponsiveService } from '../responsive.service';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-
-  isScreenBig$:Observable<boolean>;
   showMenu:boolean = false;
-
-  constructor(responsiveService: ResponsiveService) {
-      this.isScreenBig$ = responsiveService.isScreenBig$;
-  }
-
 }

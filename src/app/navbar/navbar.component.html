@@ -1,67 +1,67 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row *ngIf="isScreenBig$ | async">
-        <label class="mat-headline-4">&lt;/ty&gt;</label>
-        <div class="header-center-container">
-            <button color="accent" mat-button><mat-icon>account_circle</mat-icon>About</button>
-            <button color="accent" mat-button><mat-icon>engineering</mat-icon>Skills</button>
-            <button color="accent" mat-button><mat-icon>timeline</mat-icon>Experience</button>
-            <button color="accent" mat-button><mat-icon>menu_book</mat-icon>Education</button>
+<nav class="bg-black flex flex-1 items-center py-1 sm">
+    <div class="flex flex-1 sm:mx-32">
+        <label class="text-white text-4xl font-medium">&lt;/ty&gt;</label>
+        <button class="flex ml-auto items-center bg-black hover:bg-gray-900 text-white font-medium text-lg py-2 px-4 rounded sm:hidden"
+            (click)="showMenu = !showMenu">
+            <span class="material-symbols-outlined font-medium">menu</span>
+        </button>
+        <div class="hidden m-auto sm:flex">
+            <ng-container *ngTemplateOutlet="buttons">
+
+            </ng-container>
         </div>
-        <div class="header-right-container">
-            <button mat-icon-button color="accent">
-                <mat-icon svgIcon="twitter">
-                </mat-icon>
-            </button>
-            <button mat-icon-button color="accent">
-                <mat-icon svgIcon="linkedin">
-                </mat-icon>
-            </button>
-            <button mat-icon-button color="accent">
-                <mat-icon svgIcon="github">
-                </mat-icon>
-            </button>
-            <button mat-icon-button color="accent">
-                <mat-icon svgIcon="stackoverflow">
-                </mat-icon>
-            </button>
+        <div class="hidden sm:flex">
+            <ng-container *ngTemplateOutlet="links">
+
+            </ng-container>
         </div>
-    </mat-toolbar-row>
-    <mat-toolbar-row *ngIf="!(isScreenBig$ | async)">
-        <div class="header-left-container">
-            <label class="mat-headline-4">&lt;/ty&gt;</label>
-        </div>
-        <div class="header-right-container">
-            <button mat-icon-button color="accent" (click)="showMenu = !showMenu">
-                <mat-icon>
-                    menu
-                </mat-icon>
-            </button>
-        </div>
-    </mat-toolbar-row>
-</mat-toolbar>
-<nav class="mobile-navbar" [ngStyle]="{'height': !(showMenu && !(isScreenBig$ | async)) ? '0px' : '200px'}">
-    <ul>
-        <li><button color="accent" mat-button><mat-icon>account_circle</mat-icon>About</button></li>
-        <li><button color="accent" mat-button><mat-icon>engineering</mat-icon>Skills</button></li>
-        <li><button color="accent" mat-button><mat-icon>timeline</mat-icon>Experience</button></li>
-        <li><button color="accent" mat-button><mat-icon>menu_book</mat-icon>Education</button></li>
-        <li>
-            <button mat-icon-button color="accent">
-                <mat-icon svgIcon="twitter">
-                </mat-icon>
-            </button>
-            <button mat-icon-button color="accent">
-                <mat-icon svgIcon="linkedin">
-                </mat-icon>
-            </button>
-            <button mat-icon-button color="accent">
-                <mat-icon svgIcon="github">
-                </mat-icon>
-            </button>
-            <button mat-icon-button color="accent">
-                <mat-icon svgIcon="stackoverflow">
-                </mat-icon>
-            </button>
-        </li>
-    </ul>
+    </div>
 </nav>
+<nav class="sm:hidden overflow-hidden bg-black transition-all"
+    [ngStyle]="{'height': !showMenu ? '0px' : '224px'}">
+    <ng-container *ngTemplateOutlet="buttons"></ng-container>
+    <div class="flex justify-center">
+        <ng-container *ngTemplateOutlet="links"></ng-container>
+    </div>
+</nav>
+<ng-template #buttons>
+    <button
+        class="btn">
+        <span class="material-symbols-outlined font-medium">account_circle</span>
+        &nbsp;About
+    </button>
+    <button
+        class="btn">
+        <span class="material-symbols-outlined font-medium">engineering</span>
+        &nbsp;Skills
+    </button>
+    <button
+        class="btn">
+        <span class="material-symbols-outlined font-medium">timeline</span>
+        &nbsp;Experience
+    </button>
+    <button
+        class="btn">
+        <span class="material-symbols-outlined font-medium">menu_book</span>
+        &nbsp;Education
+    </button>
+</ng-template>
+
+<ng-template #links>
+    <button class="btn">
+        <mat-icon svgIcon="twitter">
+        </mat-icon>
+    </button>
+    <button class="btn">
+        <mat-icon svgIcon="linkedin">
+        </mat-icon>
+    </button>
+    <button class="btn">
+        <mat-icon svgIcon="github">
+        </mat-icon>
+    </button>
+    <button class="btn">
+        <mat-icon svgIcon="stackoverflow">
+        </mat-icon>
+    </button>
+</ng-template>
