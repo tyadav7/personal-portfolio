@@ -47,6 +47,7 @@ export class AppComponent {
     this.addIcon('linkedin');
     this.addIcon('stackoverflow');
     this.addIcon('github');
+    this.addIcon('reactive');
   }
 
   private addIcon(label: string) {

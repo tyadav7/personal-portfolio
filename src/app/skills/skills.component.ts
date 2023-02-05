@@ -1,8 +1,7 @@
 import {
-  AfterViewInit,
   Component,
   TemplateRef,
-  ViewChild,
+  ViewChild
 } from '@angular/core';
 
 @Component({
