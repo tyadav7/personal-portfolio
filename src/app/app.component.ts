@@ -1,13 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import * as Aos from 'aos';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  ngOnInit() {
+    Aos.init();
+  }
+
   title = 'portfolio';
   constructor(
     private matIconRegistry: MatIconRegistry,
@@ -59,4 +64,3 @@ export class AppComponent {
     );
   }
 }
-
