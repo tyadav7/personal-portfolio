@@ -5,7 +5,13 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        proximanovalight: ['proxima-nova-light'],
+        proximanovasemibold: ['proxima-nova-semi-bold'],
+        proximanovabold: ['proxima-nova-bold']
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography')

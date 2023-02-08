@@ -1,19 +1,7 @@
-.main-container {
-    @apply flex-1 flex flex-col sm:flex-row min-h-screen;
-    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(../assets/img/background.svg);
+.banner-container {
+  background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(../assets/img/background.svg);
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  .item {
-    width: 200px;
-    height: 200px;
-    margin: 50px auto;
-    padding-top: 75px;
-    background: #ccc;
-    text-align: center;
-    color: #FFF;
-    font-size: 3em;
-  }
+.background-color {
+  background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8));
+}

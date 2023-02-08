@@ -2,16 +2,15 @@
     <header>
         <app-navbar></app-navbar>
     </header>
-    <div class="main-container">
-        <main class="flex-1 flex">
-            <app-banner class="flex flex-1">
-            </app-banner>
+    <div class="flex-1 flex flex-col sm:flex-row">
+        <main class="flex-1 flex flex-col">
+            <div class="banner-container flex flex-1">
+                <app-banner class="flex flex-1 h-screen"></app-banner>
+            </div>
+            <app-skills-new class="flex flex-1 background-color"></app-skills-new>
         </main>
-        <nav class="order-first sm:w-32 sm:block hidden"></nav>
-        <aside class="sm:w-32 sm:block hidden "></aside>
+        <nav class="order-first sm:w-32 sm:block hidden bg-amber-800"></nav>
+        <aside class="sm:w-32 sm:block hidden bg-purple-300"></aside>
     </div>
-    <!-- <div class="flex flex-1">
-        <app-skills-new data-aos="fade-left" data-aos-duration="1000"></app-skills-new>
-    </div> -->
     <footer class="bg-gray-100">Footer</footer>
 </div>

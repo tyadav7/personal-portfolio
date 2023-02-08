@@ -2,3 +2,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: "proxima-nova-bold";
+    src: url("assets/fonts/proximanova-bold-webfont.woff");
+}
+
+@font-face {
+    font-family: "proxima-nova-semi-bold";
+    src: url("assets/fonts/proximanova-semibold-webfont.woff2");
+}
+
+@font-face {
+    font-family: "proxima-nova-light";
+    src: url("assets/fonts/proximanova-light-webfont.woff");
+}
+
+@layer base {
+    html {
+        @apply font-proximanovalight;
+    }
+}
