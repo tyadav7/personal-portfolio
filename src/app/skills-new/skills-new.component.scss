@@ -4,7 +4,7 @@ li {
 }
 
 .frontend-img-container {
-    @apply flex flex-col w-auto p-2 m-1 items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
+    @apply flex flex-col w-full p-2 m-1 items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
     // @apply flex flex-col w-32 p-2 rounded-lg shadow-lg items-center;
 
     img {
