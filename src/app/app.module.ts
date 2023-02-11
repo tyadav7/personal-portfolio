@@ -19,6 +19,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AvatarComponent } from './avatar/avatar.component';
 import { ChevronComponent } from './chevron/chevron.component';
 import { SkillsNewComponent } from './skills-new/skills-new.component';
+import { ProgressBarComponent } from './skills/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +33,7 @@ import { SkillsNewComponent } from './skills-new/skills-new.component';
     EducationComponent,
     NavbarComponent,
     AvatarComponent,
-    ChevronComponent,
-    SkillsNewComponent
+    ChevronComponent
   ],
   imports: [
     BrowserModule,

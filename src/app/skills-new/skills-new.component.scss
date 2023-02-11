@@ -1,59 +1,17 @@
-// :host {
-//     display: flex;
-//     background: #fafafa;
-//     -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
-//     -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
-//     box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
-//     padding: 5%;
-// }
-
-// .grid-layout-row {
-//     display: grid;
-//     grid-template-columns: repeat(3, minmax(0, 1fr));
-//     grid-gap: 20px;
-// }
-
-// .item-1,
-// .item-2,
-// .item-3 {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     padding: 5% 5%;
-
-//     ul {
-//         padding: 0;
-//         margin: 0;
-
-//         li {
-//             display: flex;
-//             align-items: center;
-//             margin: 0 0 10px;
-//         }
-//     }
-// }
-
-// p.mat-body-1 {
-//     margin: 0;
-// }
-
-// .mat-headline-4 {
-//     margin: 0 0 25px;
-// }
-
-// img{
-//     max-width: 398px;
-//     position: absolute;
-// }
-
-
 li {
-    @apply flex items-center;
+    @apply flex items-center justify-center text-center;
     @apply text-base;
 }
 
-img {
-    @apply absolute;
-    width: inherit;
-    height: inherit;
+.frontend-img-container {
+    @apply flex flex-col w-auto p-2 m-1 items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
+    // @apply flex flex-col w-32 p-2 rounded-lg shadow-lg items-center;
+
+    img {
+        @apply w-4/6 relative flex flex-1;
+    }
+}
+
+span {
+    @apply text-xs
 }

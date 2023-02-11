@@ -1,47 +1,43 @@
 <nav class="bg-black flex flex-1 items-center py-1 sm">
-    <div class="flex flex-1 sm:mx-32">
-        <label class="text-white text-4xl font-medium">&lt;/ty&gt;</label>
-        <button class="flex ml-auto items-center bg-black hover:bg-gray-900 text-white font-medium text-lg py-2 px-4 rounded sm:hidden"
+    <div class="flex flex-1 lg:mx-32">
+        <label class="text-white text-4xl font-medium flex items-center font-proximanovasemibold">&lt;/ty&gt;</label>
+        <button
+            class="flex ml-auto items-center bg-black hover:bg-gray-900 text-white font-medium text-lg py-2 px-4 rounded lg:hidden"
             (click)="showMenu = !showMenu">
             <span class="material-symbols-outlined font-medium">menu</span>
         </button>
-        <div class="hidden m-auto sm:flex">
+        <div class="hidden m-auto lg:flex">
             <ng-container *ngTemplateOutlet="buttons">
 
             </ng-container>
         </div>
-        <div class="hidden sm:flex">
+        <div class="hidden lg:flex">
             <ng-container *ngTemplateOutlet="links">
 
             </ng-container>
         </div>
     </div>
 </nav>
-<nav class="sm:hidden overflow-hidden bg-black transition-all"
-    [ngStyle]="{'height': !showMenu ? '0px' : '224px'}">
+<nav class="lg:hidden overflow-hidden bg-black transition-all" [ngStyle]="{'height': !showMenu ? '0px' : '224px'}">
     <ng-container *ngTemplateOutlet="buttons"></ng-container>
     <div class="flex justify-center">
         <ng-container *ngTemplateOutlet="links"></ng-container>
     </div>
 </nav>
 <ng-template #buttons>
-    <button
-        class="btn">
+    <button class="btn">
         <span class="material-symbols-outlined font-medium">account_circle</span>
         &nbsp;About
     </button>
-    <button
-        class="btn">
+    <button class="btn">
         <span class="material-symbols-outlined font-medium">engineering</span>
         &nbsp;Skills
     </button>
-    <button
-        class="btn">
+    <button class="btn">
         <span class="material-symbols-outlined font-medium">timeline</span>
         &nbsp;Experience
     </button>
-    <button
-        class="btn">
+    <button class="btn">
         <span class="material-symbols-outlined font-medium">menu_book</span>
         &nbsp;Education
     </button>

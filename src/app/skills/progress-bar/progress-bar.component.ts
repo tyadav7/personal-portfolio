@@ -1,10 +1,6 @@
 import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  HostBinding,
-  Input,
-  ViewChild,
+  Component, HostBinding,
+  Input
 } from '@angular/core';
 
 @Component({

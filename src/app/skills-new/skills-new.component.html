@@ -1,143 +1,176 @@
-<!-- <section>
-    <div class="grid-layout-row">
-        <div class="item-1">
-            <p class="mat-headline-4">Part front-end
-            <ul>
-                <li>
-                    <mat-icon svgIcon="angular"></mat-icon>
-                    ngular
-                </li>
-                <li>
-                    HTML<mat-icon svgIcon="html"></mat-icon>
-                    /CSS <mat-icon svgIcon="css"></mat-icon>
-                </li>
-                <li>
-                    "Making it pop"
-                </li>
-                <li>
-                    <mat-icon svgIcon="material"></mat-icon>
-                    Material Design
-                </li>
-                <li>
-                    <mat-icon svgIcon="reactive"></mat-icon>&nbsp;RxJS
-                </li>
-
-                <li>
-                    Centering a div
-                </li>
-                <li>
-                    <mat-icon svgIcon="kendo"></mat-icon>&nbsp;KendoUI
-                </li>
-            </ul>
+<div class="flex justify-between p-2 flex-col lg:flex-row">
+    <div class="flex flex-1">
+        <div class="frontend-img-container">
+            <span>Angular</span>
+            <img src="../../assets/img/angular.svg">
+            <app-progress-bar class="p-1 w-full" [value]="90"></app-progress-bar>
         </div>
-        <div class="item-2" style="flex-direction: row;">
-            <img data-aos="fade-right" data-aos-duration="1000"  src="../../assets/img/pie-1.svg">
-            <img data-aos="fade-left" data-aos-duration="1000" src="../../assets/img/pie-2.svg">
+        <div class="frontend-img-container">
+            <span>TypeScript</span>
+            <img src="../../assets/img/ts.svg">
+            <app-progress-bar class="p-1 w-full" [value]="90"></app-progress-bar>
         </div>
-        <div class="item-3">
-            <p class="mat-headline-4">Part back-end
-            <ul>
-                <li>
-                    <mat-icon svgIcon="java"></mat-icon>
-                    Java/J2EE
-                </li>
-                <li>
-                    <mat-icon svgIcon="spring"></mat-icon>
-                    Spring
-                </li>
-                <li>
-                    <mat-icon svgIcon="hibernate"></mat-icon>
-                    Hibernate
-                </li>
-                <li>
-                    Big Data using <mat-icon style= "width: 50px" svgIcon="spark"></mat-icon> (kinda)
-                </li>
-                <li>
-                    <mat-icon svgIcon="docker"></mat-icon>&nbsp;
-                    Docker
-                </li>
-                <li>
-                    <mat-icon svgIcon="kubernetes"></mat-icon>&nbsp;
-                    Kubernetes
-                </li>
-                <li>
-                    <mat-icon svgIcon="sql"></mat-icon>&nbsp;
-                    SQL and NoSQL
-                </li>
-            </ul>
+        <div class="frontend-img-container">
+            <span>HTML 5</span>
+            <img src="../../assets/img/html.svg">
+            <app-progress-bar class="p-1 w-full" [value]="100"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>CSS 3</span>
+            <img src="../../assets/img/css.svg">
+            <app-progress-bar class="p-1 w-full" [value]="90"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>JavaScript</span>
+            <img src="../../assets/img/js-color.svg">
+            <app-progress-bar class="p-1 w-full" [value]="90"></app-progress-bar>
         </div>
     </div>
-</section> -->
-<!-- <div
-    class="max-w-full flex-1 flex p-4 sm:p-16 prose prose-sm 2xl:prose-h1:text-9xl sm:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl"> -->
+    <div class="flex flex-1">
+        <div class="frontend-img-container">
+            <span>tailwind</span>
+            <img src="../../assets/img/tailwind.svg">
+            <app-progress-bar class="p-1 w-full" [value]="80"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>RxJS</span>
+            <img src="../../assets/img/reactive.svg">
+            <app-progress-bar class="p-1 w-full" [value]="90"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>Jira</span>
+            <img src="../../assets/img/jira.svg">
+            <app-progress-bar class="p-1 w-full" [value]="80"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>Material</span>
+            <img src="../../assets/img/material.svg">
+            <app-progress-bar class="p-1 w-full" [value]="80"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>Kendo</span>
+            <img src="../../assets/img/kendo.svg">
+            <app-progress-bar class="p-1 w-full" [value]="80"></app-progress-bar>
+        </div>
+    </div>
+</div>
 <div
-    class="max-w-full flex flex-1 flex-col lg:flex-row p-2 lg:p-8 prose prose-sm sm:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl">
-    <section class="w-full flex items-center lg:items-end flex-col p-2 lg:p-8">
+    class="max-w-full flex flex-1 flex-col lg:flex-row p-2 prose prose-sm sm:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl">
+    <section class="w-full flex justify-center p-2 lg:p-8">
         <ul style="padding:0">
-            <h3 class="text-2xl font-proximanovalight">Frontend</h3>
+            <h3 class="text-center text-2xl font-proximanovalight">Frontend</h3>
             <li>
-                <mat-icon svgIcon="angular"></mat-icon>ngular
+                UI/UX Design
             </li>
             <li>
-                HTML<mat-icon svgIcon="html"></mat-icon>
-                /CSS <mat-icon svgIcon="css"></mat-icon>
+                Interaction Design
             </li>
-            <li>
+            <li class="font-proximanovasemibold">
                 "Making it pop"
             </li>
             <li>
-                <mat-icon svgIcon="material"></mat-icon>
-                Material Design
+                Framework expert
             </li>
             <li>
-                <mat-icon svgIcon="reactive"></mat-icon>&nbsp;RxJS
-            </li>
-
-            <li>
-                Centering a div
+                TypeScript/JavaScript
             </li>
             <li>
-                <mat-icon svgIcon="kendo"></mat-icon>&nbsp;KendoUI
+                can center a div "without googling"
+            </li>
+            <li>
+                HTML / CSS / loves "tailwind"
             </li>
         </ul>
     </section>
-    <div class="flex justify-center items-center w-full">
-        <div class="flex justify-center items-center w-[400px] h-[350px]">
-            <img class="transform scale-105" data-aos="slide-right" data-aos-duration="1000"
-                src="../../assets/img/pie-1.svg">
-            <img data-aos="slide-left" data-aos-duration="1000" src="../../assets/img/pie-2.svg">
+    <div class="relative w-full lg:h-full min-h-[12rem]">
+        <div
+            class="absolute lg:overflow-visible overflow-hidden top-1/2 left-1/2 lg:w-full lg:transform -translate-y-1/2 -translate-x-1/2 h-full lg:h-auto m-auto">
+            <img style="margin:0" class="relative top-0 transform scale-105 h-full lg:w-full" data-aos="slide-right"
+                data-aos-duration="1000" src="../../assets/img/pie-1.svg">
+            <img style="margin:0" class="absolute top-0 slide-left h-full lg:w-full" data-aos="slide-left"
+                data-aos-duration="1000" src="../../assets/img/pie-2.svg">
         </div>
     </div>
-    <section class="w-full flex flex-col p-2 lg:p-8 items-center lg:items-start">
+    <section class="w-full flex p-2 lg:p-8 justify-center">
         <ul style="padding:0">
-            <h3 class="text-2xl font-proximanovalight">Backend</h3>
+            <h3 class="text-center text-2xl font-proximanovalight">Backend</h3>
             <li>
-                <mat-icon svgIcon="java"></mat-icon>
-                Java/J2EE
+                Java / J2EE expert
             </li>
             <li>
-                <mat-icon svgIcon="spring"></mat-icon>
-                Spring
+                System Design
             </li>
             <li>
-                <mat-icon svgIcon="hibernate"></mat-icon>
-                Hibernate
+                Microservices with Spring
             </li>
             <li>
-                Spark(kinda)
+                Big data using spark (kinda)
             </li>
             <li>
-                <mat-icon svgIcon="docker"></mat-icon>&nbsp;
                 Docker
             </li>
             <li>
-                <mat-icon svgIcon="kubernetes"></mat-icon>&nbsp;
                 Kubernetes
             </li>
             <li>
-                <mat-icon svgIcon="sql"></mat-icon>&nbsp;
                 SQL and NoSQL
             </li>
         </ul>
     </section>
+</div>
+<div class="flex justify-around p-2 flex-col lg:flex-row">
+    <div class="flex flex-1">
+        <div class="frontend-img-container">
+            <span>Java</span>
+            <img src="../../assets/img/java.svg">
+            <app-progress-bar class="p-1 w-full" [value]="90"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>Spring</span>
+            <img src="../../assets/img/spring.svg">
+            <app-progress-bar class="p-1 w-full" [value]="80"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>JPA</span>
+            <img src="../../assets/img/hibernate.svg">
+            <app-progress-bar class="p-1 w-full" [value]="70"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>Git</span>
+            <img src="../../assets/img/git.svg">
+            <app-progress-bar class="p-1 w-full" [value]="70"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>Docker</span>
+            <img src="../../assets/img/docker.svg">
+            <app-progress-bar class="p-1 w-full" [value]="80"></app-progress-bar>
+        </div>
+    </div>
+    <div class="flex flex-1">
+        <div class="frontend-img-container">
+            <span>k8's</span>
+            <img src="../../assets/img/kubernetes.svg">
+            <app-progress-bar class="p-1 w-full" [value]="70"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>SQL</span>
+            <img src="../../assets/img/postgre.svg">
+            <app-progress-bar class="p-1 w-full" [value]="90"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>Mongo</span>
+            <img src="../../assets/img/mongo.svg">
+            <app-progress-bar class="p-1 w-full" [value]="70"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>Redis</span>
+            <img src="../../assets/img/redis.svg">
+            <app-progress-bar class="p-1 w-full" [value]="70"></app-progress-bar>
+        </div>
+        <div class="frontend-img-container">
+            <span>Kafka</span>
+            <img src="../../assets/img/kafka.svg">
+            <app-progress-bar class="p-1 w-full" [value]="60"></app-progress-bar>
+        </div>
+    </div>
 </div>

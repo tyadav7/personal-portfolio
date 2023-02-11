@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { MaterialModule } from 'src/material.module';
+import { SkillsNewComponent } from '../skills-new/skills-new.component';
 import { BackendComponent } from './backend/backend.component';
 import { CloudComponent } from './cloud/cloud.component';
 import { DatabaseComponent } from './database/database.component';
@@ -22,12 +23,16 @@ import { ToolsComponent } from './tools/tools.component';
     DeComponent,
     CloudComponent,
     ToolsComponent,
-    SkillsComponent
+    SkillsComponent,
+    SkillsNewComponent
   ],
   imports: [
     CommonModule,
     SkillsRoutingModule,
     MaterialModule
+  ],
+  exports: [
+    SkillsNewComponent
   ]
 })
 export class SkillsModule { }
