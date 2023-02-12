@@ -13,6 +13,10 @@ import { Component } from '@angular/core';
   ],
 })
 export class ExperienceComponent {
+  
+  one:boolean = false;
+  two:boolean = false;
+  three:boolean = false;
 
   location: string = "Gurugram, Haryana, India"
 
