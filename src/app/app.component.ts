@@ -11,7 +11,6 @@ import * as Aos from 'aos';
 export class AppComponent implements OnInit {
   ngOnInit() {
     Aos.init({
-      disable:'phone'
     });
   }
 
