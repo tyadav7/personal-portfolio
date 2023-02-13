@@ -1,10 +1,10 @@
-<section
+<section data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out"
     class="text-center sm:text-left sm:block sm:prose-h3:mt-0 lg:prose-mt-0 xl:prose-h3:mt-0 2xl:prose-h3:mt-0 prose-h3:mt-0 prose sm:prose-sm lg:prose-lg xl:prose-xl 2xl:prose-2xl max-w-full">
     <h1 class="hidden sm:block text-center">Work Experience</h1>
     <div class="container max-w-5xl px-4 py-12 mx-auto">
         <div class="grid gap-4 mx-4 sm:grid-cols-12">
             <div class="col-span-12 sm:col-span-3">
-                <div
+                <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out"
                     class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0">
                     <img style="margin:0" src="../../assets/img/amdocs.svg">
                     <p style="margin-bottom: 0;"
@@ -17,50 +17,82 @@
                 </div>
             </div>
             <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
-                <div
+                <div 
                     class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700">
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out"
                         class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-black">
                         <h3 class="font-proximanovasemibold tracking-wide">Software Engineering Team Lead</h3>
                         <time class="text-xs font-proximanovasemibold tracking-wide dark:text-gray-500">Jan
                             2022 - Present ({{calculateExperience("01 01 2022")}})</time>
-                        <h4 class=" text-blue-600" *ngIf="!one" (click)="one = !one">View Roles and Responsibilities ↓</h4>
-                        <h4 class=" text-blue-600" *ngIf="one" (click)="one = !one">View Roles and Responsibilities ↑</h4>
+                        <h4 class=" text-blue-600" *ngIf="!one" (click)="one = !one">View Roles and Responsibilities ↓
+                        </h4>
+                        <h4 class=" text-blue-600" *ngIf="one" (click)="one = !one">Hide Roles and Responsibilities ↑
+                        </h4>
                         <ul style="margin:0">
-                            <div *ngIf="one">
-                                <li>Supervising full stack development of Java based cloud-native applications for network analytics and optimization operations for 5G, 4G/LTE, and converged mobile networks.</li>
-                                <li>Scrum Master and lead for a team consisting of a team of full stack engineers, responsible for holding dailies, plannings, retrospectives, refinements and grooming sessions.</li>
-                                <li>Manage, build and oversee the development of highly optimized and reusable reactive UI components, shell fragments using Angular and TypeScript based on Micro-Frontend's Architecture.</li>
-                                <li>Building microservices from ground zero based on Microservices Design Architecture, using Java and Spring, meeting robust standards following Best-Practices by adapting Modular Approach in designing the Services following SOLID Design Principles.</li>
-                                <li>Engage in productive collaboration with product managers, designers, developers, and other stakeholders to deliver outstanding user-centered products.</li>
+                            <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out" *ngIf="one">
+                                <li>Supervising full stack development of Java based cloud-native applications for
+                                    network analytics and optimization operations for 5G, 4G/LTE, and converged mobile
+                                    networks.</li>
+                                <li>Scrum Master and lead for a team consisting of a team of full stack engineers,
+                                    responsible for holding dailies, plannings, retrospectives, refinements and grooming
+                                    sessions.</li>
+                                <li>Manage, build and oversee the development of highly optimized and reusable reactive
+                                    UI components, shell fragments using Angular and TypeScript based on
+                                    Micro-Frontend's Architecture.</li>
+                                <li>Building microservices from ground zero based on Microservices Design Architecture,
+                                    using Java and Spring, meeting robust standards following Best-Practices by adapting
+                                    Modular Approach in designing the Services following SOLID Design Principles.</li>
+                                <li>Engage in productive collaboration with product managers, designers, developers, and
+                                    other stakeholders to deliver outstanding user-centered products.</li>
                             </div>
                         </ul>
                     </div>
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out"
                         class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-black">
                         <h3 class="font-proximanovasemibold tracking-wide">Software Engineering Specialist</h3>
                         <time class="text-xs font-proximanovasemibold tracking-wide dark:text-gray-500">Jan
                             2021 - Dec 2021 ({{calculateExperience("01 01 2021","01 01 2022")}})</time>
-                            <h4 class=" text-blue-600" *ngIf="!one" (click)="two = !two">View Roles and Responsibilities ↓</h4>
-                            <h4 class=" text-blue-600" *ngIf="one" (click)="two = !two">View Roles and Responsibilities ↑</h4>
-                            <div *ngIf="two">
-                                <p class="mt-1">Building reactive, responsive modern hybrid frontend applications, common frameworks for web / mobile using Angular framework and Tailwind css to deliver a seamless cross platform user experience.</p>
-                                <p class="mt-1">Build generic geolocation component based library integrated with google/bing maps, to display information,draw, drop pins, render graphics using PIXI.js. Angular,HTML, CSS on map.</p>
-                                <p class="mt-1">Facilitate the authentication workflow for multiple applications (mobile and web) using Single Sign On(SSO) methodology with SAML and Spring Boot, built microservices responsible for tracking customer session activities, concurrency checks, role based application access.</p>
-                                <p class="mt-1">Creating a subscriber analytics microservice for tracking user location based on IMEI / IMSI in near realtime using event driven architecture involving Kafka topics, Redis (Jedis), Java and Spring Boot and deploying this in cloud using Kubernetes</p>
-                                <p class="mt-1">Designing Database Architecture based on Code-First / DB-First Approach following the Repository Pattern using Spring JPA, Hibernate and SQL Scripts for Creating Tables Schema structure, Stored Procedures (SPs) etc.</p>
-                                <p class="mt-1">Perform code reviews and conduct test driven development to ensure that code meets standards, best practices, and performance requirements.</p>
+                        <h4 class=" text-blue-600" *ngIf="!two" (click)="two = !two">View Roles and Responsibilities ↓
+                        </h4>
+                        <h4 class=" text-blue-600" *ngIf="two" (click)="two = !two">Hide Roles and Responsibilities ↑
+                        </h4>
+                        <ul style="margin:0">
+                            <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out" *ngIf="two">
+                                <li>Building reactive, responsive modern hybrid frontend applications, common
+                                    frameworks for web / mobile using Angular framework and Tailwind css to deliver a
+                                    seamless cross platform user experience.</li>
+                                <li>Build generic geolocation component based library integrated with
+                                    google/bing maps, to display information,draw, drop pins, render graphics using PIXI.js.
+                                    Angular,HTML, CSS on map.</li>
+                                <li>Facilitate the authentication workflow for multiple applications (mobile and
+                                    web) using Single Sign On(SSO) methodology with SAML and Spring Boot, built
+                                    microservices responsible for tracking customer session activities, concurrency checks,
+                                    role based application access.</li>
+                                <li>Creating a subscriber analytics microservice for tracking user location
+                                    based on IMEI / IMSI in near realtime using event driven architecture involving Kafka
+                                    topics, Redis (Jedis), Java and Spring Boot and deploying this in cloud using Kubernetes
+                                </li>
+                                <li>Designing Database Architecture based on Code-First / DB-First Approach
+                                    following the Repository Pattern using Spring JPA, Hibernate and SQL Scripts for
+                                    Creating Tables Schema structure, Stored Procedures (SPs) etc.</li>
+                                <li>Perform code reviews and conduct test driven development to ensure that code
+                                    meets standards, best practices, and performance requirements.</li>
                             </div>
+                        </ul>
                     </div>
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out"
                         class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-black">
                         <h3 class="font-proximanovasemibold tracking-wide">Software Developer</h3>
                         <time class="text-xs font-proximanovasemibold tracking-wide dark:text-gray-500">Jun
                             2017 - Dec 2020 ({{calculateExperience("06 01 2017","12 31 2020")}})</time>
-                        <span class=" text-blue-600" *ngIf="!one" (click)="three = !three">View Roles and Responsibilities ↓</span>
-                        <span class=" text-blue-600" *ngIf="one" (click)="three = !three">View Roles and Responsibilities ↑</span>
-                        <div *ngIf="three">
-                            <p class="mt-3">Suspendisse tincidunt, arcu nec faucibus efficitur, justo velit consectetur nisl, sit amet condimentum lacus orci nec purus. Mauris quis quam suscipit, vehicula felis id, vehicula enim.</p>
+                        <span class=" text-blue-600" *ngIf="!one" (click)="three = !three">View Roles and
+                            Responsibilities ↓</span>
+                        <span class=" text-blue-600" *ngIf="one" (click)="three = !three">View Roles and
+                            Responsibilities ↑</span>
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out" *ngIf="three">
+                            <p class="mt-3">Suspendisse tincidunt, arcu nec faucibus efficitur, justo velit consectetur
+                                nisl, sit amet condimentum lacus orci nec purus. Mauris quis quam suscipit, vehicula
+                                felis id, vehicula enim.</p>
                         </div>
                     </div>
                 </div>
@@ -70,7 +102,7 @@
     <div class="container max-w-5xl px-4 py-12 mx-auto">
         <div class="grid gap-4 mx-4 sm:grid-cols-12">
             <div class="col-span-12 sm:col-span-3">
-                <div
+                <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out"
                     class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0">
                     <img style="margin:0" src="../../assets/img/accenture.svg">
                     <p style="margin-bottom:0"
@@ -81,7 +113,7 @@
                 </div>
             </div>
             <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
-                <div
+                <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out"
                     class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700">
                     <div
                         class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-black">
@@ -91,7 +123,7 @@
                         <p class="mt-3">Pellentesque feugiat ante at nisl efficitur, in mollis orci scelerisque.
                             Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                     </div>
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out"
                         class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-black">
                         <h3 class="font-proximanovasemibold tracking-wide">Associate Software Engineer</h3>
                         <time class="text-xs font-proximanovasemibold tracking-wide dark:text-gray-500">Oct
