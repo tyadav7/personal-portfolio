@@ -4,15 +4,16 @@
         <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out"
             class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-black">
 
-            <h3 class="font-proximanovasemibold tracking-wide">{{role.name}}</h3>
+            <h3 style="margin-bottom: 0;" class="font-proximanovasemibold tracking-wide">{{role.name}}</h3>
+            <h5 class="font-proximanovasemibold tracking-wide" *ngIf="role.subtitle">{{role.subtitle}}</h5>
             <time
                 class="text-xs font-proximanovasemibold tracking-wide dark:text-gray-500">{{experienceFromToInWords(role.from,role.to)}}
                 ({{totalExperienceInWords(role.from,role.to)}})</time>
-            <h4 class=" text-blue-600" *ngIf="!role.enabled" (click)="role.enabled = !role.enabled">View Roles and
+            <h4 class=" text-blue-600" *ngIf="!role.enabled && role.content.length > 0" (click)="role.enabled = !role.enabled">View Roles and
                 Responsibilities
                 ↓
             </h4>
-            <h4 class=" text-blue-600" *ngIf="role.enabled" (click)="role.enabled = !role.enabled">Hide Roles and
+            <h4 class=" text-blue-600" *ngIf="role.enabled && role.content.length > 0" (click)="role.enabled = !role.enabled">Hide Roles and
                 Responsibilities
                 ↑
             </h4>

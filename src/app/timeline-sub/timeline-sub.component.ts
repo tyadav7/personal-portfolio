@@ -19,4 +19,5 @@ export interface Role {
   to: Date;
   from: Date;
   content: Array<string>;
+  subtitle?: string
 }
