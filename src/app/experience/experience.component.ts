@@ -21,9 +21,9 @@ export class ExperienceComponent {
       name: 'Software Development Team Lead',
       content: [
         "Supervising full stack development of Java based cloud-native applications for network analytics and optimization operations for 5G, 4G/LTE, and converged mobile networks.",
-        "Scrum Master and lead for a team consisting of a team of full stack engineers, responsible for holding dailies, plannings, retrospectives, refinements and grooming sessions.",
+        "Scrum Master and lead for a team of full stack engineers, responsible for holding dailies, plannings, retrospectives, refinements and grooming sessions.",
         "Manage, build and oversee the development of highly optimized and reusable reactive UI components, shell fragments using Angular and TypeScript based on Micro-Frontend's Architecture.",
-        "Building microservices from ground zero based on Microservices Design Architecture, using Java and Spring, meeting robust standards following Best-Practices by adapting Modular Approach in designing the Services following SOLID Design Principles.",
+        "Building microservices from ground zero based on Microservices Design Architecture, using Java and Spring, meeting robust standards following Best-Practices by adapting Modular Approach in design following SOLID Design Principles.",
         "Engage in productive collaboration with product managers, designers, developers, and other stakeholders to deliver outstanding user-centered products."
       ],
     },
@@ -33,10 +33,10 @@ export class ExperienceComponent {
       to: new Date('12/31/2021'),
       name: 'Software Development Specialist',
       content: [
-        "Building reactive, responsive modern hybrid frontend applications, common frameworks for web / mobile using Angular framework and Tailwind css to deliver a seamless cross platform user experience.",
-        "Build generic geolocation component based library integrated with google/bing maps, to display information,draw, drop pins, render graphics using PIXI.js. Angular,HTML, CSS on map.",
+        "Building reactive, responsive modern hybrid frontend applications, frameworks for web / mobile using Angular framework and Tailwind to deliver a seamless cross platform user experience.",
+        "Build generic geolocation component based library integrated with google/bing maps, to display information, draw, drop pins, render graphics using PIXI, Angular, HTML, CSS.",
         "Facilitate the authentication workflow for multiple applications (mobile and web) using Single Sign On(SSO) methodology with SAML and Spring Boot, built microservices responsible for tracking customer session activities, concurrency checks, role based application access.",
-        "Creating a subscriber analytics microservice for tracking user location based on IMEI / IMSI in near realtime using event driven architecture involving Kafka topics, Redis (Jedis), Java and Spring Boot and deploying this in cloud using Kubernetes",
+        "Creating a subscriber analytics microservice for tracking user location based on IMEI / IMSI in near realtime using event driven architecture involving Kafka topics, Redis (Jedis), Java, Spring Boot.",
         "Designing Database Architecture based on Code-First / DB-First Approach following the Repository Pattern using Spring JPA, Hibernate and SQL Scripts for Creating Tables Schema structure, Stored Procedures (SPs) etc.",
         "Perform code reviews and conduct test driven development to ensure that code meets standards, best practices, and performance requirements."
       ],
