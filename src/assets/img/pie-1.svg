@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <g data-name="Pie Chart">
-                    <path fill="#1f4287"
+                    <path fill="#bfbfbf"
                         d="M51.0869,49.6729,33,31.5859V6a1,1,0,0,0-1-1A27,27,0,1,0,51.0879,51.0864,1,1,0,0,0,51.0869,49.6729Z" />
                 </g>
-                <text xmlns="http://www.w3.org/2000/svg" x="11" y="33" fill="#21e6c1" font-size="0.3em" font-family="Helvetica, Verdana, sans-serif">Frontend</text>
+                <text xmlns="http://www.w3.org/2000/svg" x="11" y="33" fill="#fff" font-size="0.3em" font-family="Helvetica, Verdana, sans-serif">Frontend</text>
             </svg>
