@@ -20,6 +20,8 @@ import { AvatarComponent } from './avatar/avatar.component';
 import { ChevronComponent } from './chevron/chevron.component';
 import { SkillsNewComponent } from './skills-new/skills-new.component';
 import { ProgressBarComponent } from './skills/progress-bar/progress-bar.component';
+import { TimelineComponent } from './timeline/timeline.component';
+import { TimelineSubComponent } from './timeline-sub/timeline-sub.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ProgressBarComponent } from './skills/progress-bar/progress-bar.compone
     EducationComponent,
     NavbarComponent,
     AvatarComponent,
-    ChevronComponent
+    ChevronComponent,
+    TimelineComponent,
+    TimelineSubComponent
   ],
   imports: [
     BrowserModule,

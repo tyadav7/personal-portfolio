@@ -1,0 +1,28 @@
+<div
+    class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700">
+    <ng-container *ngFor="let role of roles">
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out"
+            class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-black">
+
+            <h3 class="font-proximanovasemibold tracking-wide">{{role.name}}</h3>
+            <time
+                class="text-xs font-proximanovasemibold tracking-wide dark:text-gray-500">{{experienceFromToInWords(role.from,role.to)}}
+                ({{totalExperienceInWords(role.from,role.to)}})</time>
+            <h4 class=" text-blue-600" *ngIf="!role.enabled" (click)="role.enabled = !role.enabled">View Roles and
+                Responsibilities
+                ↓
+            </h4>
+            <h4 class=" text-blue-600" *ngIf="role.enabled" (click)="role.enabled = !role.enabled">Hide Roles and
+                Responsibilities
+                ↑
+            </h4>
+            <ul style="margin:0">
+                <div data-aos="fade-up" data-aos-duration="2000" data-aos-ease="ease-in-out" *ngIf="role.enabled">
+                    <li *ngFor="let content of role.content">
+                        {{content}}
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </ng-container>
+</div>
