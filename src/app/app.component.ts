@@ -4,7 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import * as Aos from 'aos';
 
 @Component({
-  selector: 'body[app-root]',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
