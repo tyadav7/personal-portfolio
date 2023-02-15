@@ -22,7 +22,7 @@ export class ExperienceComponent {
       content: [
         "Supervising full stack development of Java based cloud-native applications for network analytics and optimization operations for 5G, 4G/LTE, and converged mobile networks.",
         "Scrum Master and lead for a team of full stack engineers, responsible for holding dailies, plannings, retrospectives, refinements and grooming sessions.",
-        "Manage, build and oversee the development of highly optimized and reusable reactive UI components, shell fragments using Angular and TypeScript based on Micro-Frontend's Architecture.",
+        "Manage, build and oversee the development of highly optimized and reusable reactive UI components, shell fragments using Angular, TypeScript and Tailwind based on Micro-Frontend's Architecture.",
         "Building microservices from ground zero based on Microservices Design Architecture, using Java and Spring, meeting robust standards following Best-Practices by adapting Modular Approach in design following SOLID Design Principles.",
         "Engage in productive collaboration with product managers, designers, developers, and other stakeholders to deliver outstanding user-centered products."
       ],
@@ -47,6 +47,12 @@ export class ExperienceComponent {
       to: new Date('12/31/2020'),
       name: 'Software Developer',
       content: [
+        "Migration of old legacy application written on Adobe Flex to Angular, HTML, CSS which involved writing new services, routing, extensive use of RxJS framework (Observables and Subjects).",
+        "Understanding the core business of the company and how telecom company works, understanding the different between multiple telecom technologies like Edge, 2G, 3G, 4G and 5G",
+        "Assisted in creating data pipelines reducing the substantial cost and time by 50%, by migrating the costly aggregation processing of call data done on Oracle & SQL Server to Kafka and Spark.",
+        "Automating the CI/CD pipeline using Jenkins, Docker, Nexus Repository to increase the speed and quality of software delivery, reduce manual errors, and ensure that applications are always up-to-date.",
+        "Responsible for documenting all the application level changes and enhancements including Data-Flow-Diagrams (DFDs), Sequence Diagrams and Class Diagrams.",
+        "Involved in various bug fixes and responsible for enhancements in both UI and Functional areas."
       ],
     },
     ];
@@ -54,20 +60,17 @@ export class ExperienceComponent {
     let roles2 = [
       {
         enabled: false,
-        from: new Date('03/01/2016'),
+        from: new Date('10/01/2015'),
         to: new Date('06/30/2017'),
         name: 'Software Developer',
         content: [
+          "Developed high-volume & low-latency web-services delivering high-availability & performance using Spring framework and JAVA.",
+          "Built modern Hybrid front-end applications for web/mobile using Angular and Angular Material framework to deliver a seamless cross-platform user experience.",
+          "Worked on building the Customer Relationship Management (CRM) platform to enable the sales team to cater customers and leads and provide them analytics by aggregating and transforming survey data.",
+          "Engaged in all phases of SDLC as requirement gathering, feasibility analysis, sprint planning, architecture design, coding, debugging and maintenance.",
+          "Creation of various Automation tools for providing support across multiple clients instantly."
         ],
-      },
-      {
-      enabled: false,
-      from: new Date('10/1/2015'),
-      to: new Date('03/28/2016'),
-      name: 'Associate Software Developer',
-      content: [
-      ],
-    }]
+      }]
 
     this.jobs = [{
       from: new Date('6/1/2017'),
