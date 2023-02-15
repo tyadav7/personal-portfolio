@@ -1,3 +1,7 @@
-.btn{
+.btn {
     @apply flex items-center bg-black hover:bg-gray-900 text-white font-medium text-lg m-auto py-2 px-4 rounded;
+}
+
+a {
+    @apply flex items-center justify-center;
 }

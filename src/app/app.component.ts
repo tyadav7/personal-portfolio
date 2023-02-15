@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer
   ) {
+    this.addIcon('leetcode');
     this.addIcon('logo');
     this.addIcon('ts');
     this.addIcon('js');

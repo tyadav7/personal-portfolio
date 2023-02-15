@@ -1,6 +1,7 @@
 <nav class="bg-black flex flex-1 items-center py-1 sm min-h-[5rem]" data-aos="fade-down" data-aos-duration="2000">
     <div class="flex flex-1 lg:mx-32">
-        <label class="ml-4 text-white text-4xl font-medium flex items-center font-proximanovasemibold">&lt;/ty&gt;</label>
+        <label
+            class="ml-4 text-white text-4xl font-medium flex items-center font-proximanovasemibold">&lt;/ty&gt;</label>
         <button
             class="flex ml-auto items-center bg-black hover:bg-gray-900 text-white font-medium text-lg py-2 px-4 rounded lg:hidden"
             (click)="showMenu = !showMenu">
@@ -26,38 +27,46 @@
 </nav>
 <ng-template #buttons>
     <button class="btn">
-        <span class="material-symbols-outlined font-medium">account_circle</span>
-        &nbsp;About
+        <a href="#about"><span class="material-symbols-outlined font-medium">account_circle</span>
+            &nbsp;About</a>
     </button>
     <button class="btn">
-        <span class="material-symbols-outlined font-medium">engineering</span>
-        &nbsp;Skills
+        <a href="#skills"><span class="material-symbols-outlined font-medium">engineering</span>
+            &nbsp;Skills</a>
     </button>
     <button class="btn">
-        <span class="material-symbols-outlined font-medium">timeline</span>
-        &nbsp;Experience
+        <a href="#experience"> <span class="material-symbols-outlined font-medium">timeline</span>
+            &nbsp;Experience</a>
     </button>
     <button class="btn">
-        <span class="material-symbols-outlined font-medium">menu_book</span>
-        &nbsp;Education
+        <a href="#education"><span class="material-symbols-outlined font-medium">menu_book</span>
+            &nbsp;Education</a>
     </button>
 </ng-template>
 
 <ng-template #links>
     <button class="btn">
-        <mat-icon svgIcon="twitter">
-        </mat-icon>
+        <a href="https://twitter.com/Tushki3">
+            <mat-icon svgIcon="twitter">
+            </mat-icon>
+        </a>
     </button>
     <button class="btn">
-        <mat-icon svgIcon="linkedin">
-        </mat-icon>
+        <a href="https://linkedin.com/in/tushar-yadav7">
+            <mat-icon svgIcon="linkedin">
+            </mat-icon>
+        </a>
     </button>
     <button class="btn">
-        <mat-icon svgIcon="github">
-        </mat-icon>
+        <a href="https://github.com/tyadav7">
+            <mat-icon svgIcon="github">
+            </mat-icon>
+        </a>
     </button>
     <button class="btn">
-        <mat-icon svgIcon="stackoverflow">
-        </mat-icon>
+        <a href="https://leetcode.com/tyadav7/">
+            <mat-icon svgIcon="leetcode">
+            </mat-icon>
+        </a>
     </button>
 </ng-template>
