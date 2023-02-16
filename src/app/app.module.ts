@@ -7,21 +7,18 @@ import { MaterialModule } from 'src/material.module';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AvatarComponent } from './avatar/avatar.component';
 import { BannerComponent } from './banner/banner.component';
+import { ChevronComponent } from './chevron/chevron.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { IconbarComponent } from './iconbar/iconbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
-import { SkillsComponent } from './skills/skills.component';
 import { SkillsModule } from './skills/skills.module';
 import { TechnologyComponent } from './technology/technology.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { AvatarComponent } from './avatar/avatar.component';
-import { ChevronComponent } from './chevron/chevron.component';
-import { SkillsNewComponent } from './skills-new/skills-new.component';
-import { ProgressBarComponent } from './skills/progress-bar/progress-bar.component';
-import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineSubComponent } from './timeline-sub/timeline-sub.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +49,7 @@ import { TimelineSubComponent } from './timeline-sub/timeline-sub.component';
     {
       provide: APP_INITIALIZER,
       useValue: () => new Promise(resolve =>
-        setTimeout(resolve, 3000)
+        setTimeout(resolve, 1000)
       ),
       multi: true
     }

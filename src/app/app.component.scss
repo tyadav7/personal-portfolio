@@ -1,0 +1,11 @@
+footer {
+    @apply flex flex-col items-center justify-center bg-gray-100 overflow-hidden;
+}
+
+span.material-symbols-outlined {
+    @apply mx-4 text-blue-500;
+}
+
+p {
+    @apply text-sm font-proximanovasemibold text-gray-600;
+}
