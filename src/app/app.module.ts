@@ -49,7 +49,7 @@ import { TimelineComponent } from './timeline/timeline.component';
     {
       provide: APP_INITIALIZER,
       useValue: () => new Promise(resolve =>
-        setTimeout(resolve, 1000)
+        setTimeout(resolve, 3000)
       ),
       multi: true
     }
